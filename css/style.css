@@ -16,6 +16,77 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.scroll {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.menu-logo {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    animation: adi 2s ease-in-out alternate;
+}
+@keyframes adi {
+ 0% {
+     transform: translateX(900px);
+ }
+    100% {
+        transform: translateX(0);
+    }
+}
+.menu {
+    position: absolute;
+    width: 30%;
+    height: 60vh;
+    background-color: slateblue;
+    padding: 50px;
+    transform: translateX(-900px);
+    transition: .5s;
+
+}
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid rgb(130, 117, 218);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu li a {
+    color: snow;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-weight .2s;
+}
+
+.menu li:first-child a {
+    font-weight: bold;
+}
+
+.menu:last-child {
+    border-bottom: none;
+}
+
+.menu li a:hover {
+    font-weight: bold;
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -132,11 +203,13 @@ body {
 
     animation: text 2s ease-in-out alternate;
 }
-.page{
+
+.page {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 @keyframes text {
     0% {
         transform: translateX(1000px);
@@ -270,19 +343,20 @@ body {
     line-height: 150%;
     color: #30444E;
     padding: 20px 0;
-    animation: bunt 3s 1 ease-in-out ;
+    animation: bunt 3s 1 ease-in-out;
 }
+
 @keyframes bunt {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    50%{
-        transform: translateX(600px) ;
+    50% {
+        transform: translateX(600px);
     }
-    90%{
+    90% {
         transform: translateX(-100px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
@@ -325,19 +399,20 @@ body {
     line-height: 150%;
     color: #30444E;
     padding: 20px 0;
-    animation: bunt 3s 1 ease-in-out ;
+    animation: bunt 3s 1 ease-in-out;
 }
+
 @keyframes bunt {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    50%{
-        transform: translateX(600px) ;
+    50% {
+        transform: translateX(600px);
     }
-    90%{
+    90% {
         transform: translateX(-100px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
@@ -380,20 +455,21 @@ body {
     line-height: 150%;
     color: #30444E;
     padding: 20px 0;
-    animation: bunt 3s 1 ease-in-out ;
+    animation: bunt 3s 1 ease-in-out;
 }
+
 @keyframes bunt {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    50%{
-        transform: translateX(600px) ;
+    50% {
+        transform: translateX(600px);
     }
-    90%{
-        transform: translateX(-1000px) ;
+    90% {
+        transform: translateX(-1000px);
     }
-    100%{
-        transform:translateX(0);
+    100% {
+        transform: translateX(0);
     }
 }
 
@@ -458,29 +534,32 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
-    position: relative;
-    left: 35%;
-    top: 20px;
+   text-align: center;
+    width: 90%;
 }
-.bag-one{
+
+.bag-one {
     animation: nil 1.5s ease-in-out alternate;
 }
+
 @keyframes nil {
-    0%{
+    0% {
         transform: translateX(-1000px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
-.bag-two{
+
+.bag-two {
     animation: main 1.5s ease-in-out alternate;
 }
+
 @keyframes main {
-    0%{
+    0% {
         transform: translateX(1000px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
